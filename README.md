@@ -84,4 +84,4 @@ python pipeline.py --book-name "test1"
 
 ## Token消耗估算
 
-每篇约15-20万token（含评估和修改循环），你的1400万token可跑70-90篇。
+每篇约12-20万token（含评估和修改循环）。
