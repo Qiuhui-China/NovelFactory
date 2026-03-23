@@ -1,0 +1,49 @@
+# ============================================================
+# Novel Factory v2 config example
+# 把它复制成 config.yaml 并填入你的真实 API Key
+# ============================================================
+
+api:
+  # TODO: 填入你的智谱 API Key
+  key: "YOUR_ZHIPU_API_KEY"
+  base_url: "https://open.bigmodel.cn/api/paas/v4"
+
+models:
+  creative: "glm-4-plus"
+  workhorse: "glm-4-plus"
+
+generation:
+  temperature_creative: 0.92
+  temperature_writing: 0.78
+  temperature_polish: 0.65
+  max_tokens_short: 2500
+  max_tokens_medium: 4096
+  max_tokens_long: 4096
+
+story:
+  target_words_min: 10000
+  target_words_max: 12000
+  write_parts: 4
+  words_per_part: 2500
+
+resilience:
+  max_retries: 3
+  retry_delay: 5
+  request_interval: 2.0
+  quality_threshold: 7
+  max_revisions: 2
+
+  sensitive_replacements:
+    "家暴": "家庭冷暴力"
+    "自杀": "轻生念头"
+    "割腕": "伤害自己"
+    "强暴": "侵犯"
+    "毒药": "有害物质"
+    "杀人": "加害"
+    "黑客攻击": "网络安全攻防"
+    "入侵系统": "渗透测试"
+    "做空": "风险对冲"
+
+output:
+  dir: "./output"
+  encoding: "utf-8"

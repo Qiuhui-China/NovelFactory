@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environments
+venv/
+.venv/
+
+# Generated output (stories, logs, intermediate artifacts)
+output/
+
+# Secrets
+config.yaml
+
+# IDE
+.vscode/
+.idea/
+
+# Optional / heavy assets
+others/*.jpg
+others/*.jpeg
+others/*.png
+others/*.pdf
